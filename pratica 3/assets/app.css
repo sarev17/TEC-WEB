@@ -1,0 +1,40 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+h1{
+    color: #6b6bff;
+}
+#movies img:hover{
+    scale: 110%;
+}
+#movies img{
+    border-radius: 14px;
+    margin: 0.5rem;
+}
+header{
+    background-color: black;
+    position: absolute;
+    width: 110%;
+    margin-left: -10px;
+    margin-top: -9px;
+    padding: 1rem;
+    margin-top: -20px;
+}
+h2{
+    color: white;
+    display: inline;
+}
+footer{
+    background-color: black;
+    position: absolute;
+    bottom: -14rem;
+    width: 103%;
+    margin-left: -10px;
+    text-align: center;
+    padding: 1rem;
+}
+footer img{
+    width: 3rem;
+    margin: 0.4rem;
+}
