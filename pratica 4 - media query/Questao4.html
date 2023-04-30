@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 2rem;
+        padding: 2rem;
+        align-items: center;
+    }
+    #buttons{
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+    }
+    #desc{
+      float: right;
+    }
+    img{
+      width: 100%;
+    }
+    
+    @media (max-width:1200px) and (min-width:720px){
+      picture{
+        display: none;
+      }
+      section{
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+    @media (max-width:720px) {
+      picture{
+        display: none;
+      }
+      section{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div id="buttons">
+      <button>Brasil</button>
+      <button>Alemaha</button>
+      <button>Argentina</button>
+      <button>Belgica</button>
+      <button>Uruguai</button>
+    </div>
+    <div id="desc">
+      <h1>Seleção do Brasil</h1>
+      <p>
+          A seleção brasileira de futebol é uma das mais famosas e bem-sucedidas do mundo. Sua história remonta ao início do século XX, quando o futebol começou a ser introduzido no Brasil.
+          A seleção brasileira participou da primeira Copa do Mundo em 1930, mas só começou a se destacar internacionalmente na década de 1950, quando conquistou seus dois primeiros títulos mundiais em 1958 e 1962.
+          Nos anos 70, a seleção brasileira continuou a ser uma força dominante no futebol mundial, com jogadores como Pelé, Rivellino e Jairzinho. Em 1970, o Brasil conquistou o seu terceiro título mundial, numa das maiores atuações de todos os tempos, com uma equipe conhecida como a "Seleção de Ouro".
+      </p>
+    </div id="pic">
+      <picture><img src="https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg" alt=""></picture>
+    <div>
+      
+    </div>
+  </section>
+
+</body>
+
+</html>

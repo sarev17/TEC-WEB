@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Estilos padrão das divs */
+    .div1 {
+      background-color: green;
+      height: 35vh;
+      /* Define a altura como 75% da altura da tela */
+      width: calc(35vh * 0.75);
+      /* Define a largura como 75% da altura multiplicada por 0.75, para manter a proporção 3:4 */
+      margin: 0 auto;
+      /* Centraliza a div horizontalmente */
+    }
+
+    .div2 {
+      background-color: lightblue;
+      height: 100px;
+      width: 100%;
+    }
+
+    .div3 {
+      background-color: pink;
+      height: 100px;
+      width: 100%;
+    }
+
+    .div4 {
+      background-color: pink;
+      height: 100px;
+      width: 100%;
+    }
+
+    .div5 {
+      background-color: green;
+      height: 100px;
+      width: 100%;
+    }
+
+    /* Media query para exibir as divs de forma diferente em telas pequenas */
+    @media only screen and (max-width: 767px) {
+
+      /* Exibe somente a div 1 em telas pequenas */
+      .div1 {
+        display: block;
+      }
+
+      .div2,
+      .div3,
+      .div4,
+      .div5 {
+        display: none;
+      }
+    }
+
+    /* Media query para exibir as divs de forma diferente em telas médias e grandes */
+    @media only screen and (min-width: 768px) {
+
+      /* Exibe as divs 1 e 2 em telas médias e grandes */
+      .div1,
+      .div2 {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      /* Define a largura da div 1 como metade da largura total, para exibir a div 2 abaixo dela */
+      .div1 {
+        width: calc(50% - 10px);
+        /* Subtrai 10px da largura para compensar a margem entre as divs */
+      }
+
+      .div2 {
+        width: calc(50% - 10px);
+        /* Subtrai 10px da largura para compensar a margem entre as divs */
+      }
+
+      /* Oculta as demais divs */
+      .div3,
+      .div4,
+      .div5 {
+        display: none;
+      }
+    }
+
+    /* Media query para exibir as divs de forma diferente em telas grandes */
+    @media only screen and (min-width: 1200px) {
+
+      /* Exibe as cinco divs em telas grandes */
+      .div1,
+      .div2,
+      .div3,
+      .div4,
+      .div5 {
+        display: block;
+        width: 100%;
+      }
+
+      /* Define a cor da div 4 como verde, para que seja igual à div 1 */
+      .div4 {
+        background-color: green;
+      }
+
+      /* Define a cor da div 5 como azul claro, para que seja igual à div 2 */
+      .div5 {
+        background-color: lightblue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1">Div 1</div>
+  <div class="div2">Div 2</div>
+  <div class="div3">Div 3</div>
+  <div class="div4">Div 4</div>
+  <div class="div5">Div 5</div>
+
+
+</body>
+
+</html>
