@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SportBike</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,400&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/style.css">
+        <link rel="stylesheet" href="/assets/burguer.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header
+            class="d-flex justify-content-between py-2 px-4 text-white align-items-center position-relative">
+            <picture><img src="/assets/img/logo.avif" alt></picture>
+            <div id="menu-desc">
+                <h1>SportBike </h1>
+                <p class="text-danger">Voando em duas rodas</p>
+            </div>
+            <form method="get" action="/index.html" id="search">
+                <input type="search" name="search" id="search-menu"
+                    placeholder="O que está procurando?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <aside>
+                <div
+                    class="position-absolute top-0 end-0 mt-2 d-flex justify-content-around col-1">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </aside>
+            <nav class="position-absolute bottom-0 end-0">
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Motos</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Vestuário</a></li>
+                    <li><form action method="get"><input type="text" name
+                                id="search-mob" placeholder="Buscar"></form></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section style="padding: unset;" id="banner-dominar"
+            class="position-relative">
+            <img src="/assets/img/banner dominar.jpg" alt>
+            <form id="financiamento"
+                class="position-absolute top-0 end-0 d-flex flex-column m-4">
+                <h2>Simule um financiamento</h2>
+                <input placeholder="Nome completo" type="text" id="nome"
+                    name="nome" required>
+                <input placeholder="CPF" type="text" id="cpf" name="cpf"
+                    required>
+                <input placeholder="Entrada" type="text" name="entrada"
+                    id="entrada">
+                <select id="parcelas" name="parcelas" required>
+                    <option value>Parcelas</option>
+                    <option value="12">12x</option>
+                    <option value="24">24x</option>
+                    <option value="36">36x</option>
+                </select>
+                <button class="button-sub" type="submit">Simular</button>
+            </form>
+        </section>
+        <section class="container d-flex position-relative top-4">
+            <article class="row col-8">
+                <h2 class="title">Em destaque</h2>
+                <div id="desc-dominar" class="d-fex">
+                    <picture><img src="/assets/img/bajaj_dominar-400_brasil.jpg"
+                            alt></picture>
+                    <div>
+                        <h4>Dominar 400</h4>
+                        <p>A Dominar 400 é uma motocicleta produzida pela
+                            fabricante indiana Bajaj. Ela tem um motor
+                            monocilíndrico de 373cc que produz 39 cavalos de
+                            potência e um torque máximo de 35 Nm. A moto tem um
+                            design robusto e agressivo, com um chassi de aço de
+                            treliça que confere estabilidade e segurança em
+                            altas velocidades. Possui um sistema de freios a
+                            disco em ambas as rodas, suspensão dianteira </p>
+                        <a class="button-sub" style="background-color:
+                            #262529;padding: 0.2rem 1rem;border-radius: 4px;"
+                            href>Saiba mais</a>
+                    </div>
+                </div>
+                <h2>Veja mais</h2>
+                <div id="other-products" class="container">
+                    <div class="row">
+                        <a class="col-sm" href="#"><div>
+                                <picture><img src="/assets/img/nc750.webp" alt></picture>
+                                <p>Lançamento: Honda NC 750X 2022 é a ‘Sete
+                                    Galo’
+                                    automática</p>
+                            </div></a>
+                        <a class="col-sm" href="#"><div>
+                                <picture><img src="/assets/img/bmw1200 gs.jpg"
+                                        alt></picture>
+                                <p>Lançamento: BMW R 1200 GS - Guia de Motos -
+                                    Motonline</p>
+                            </div></a>
+                        <a class="col-sm" href="#"><div>
+                                <picture><img src="/assets/img/waxasaki.jpg" alt></picture>
+                                <p>Lançamento: Moto Kawasaki Z 750 Z 750 por
+                                    R$26.500,00</p>
+                            </div></a>
+                    </div>
+                </div>
+            </article>
+            <article class="row col-6">
+                <iframe width="400" height="280"
+                    src="https://www.youtube.com/embed/jVXaB7qlEqU?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </article>
+        </section>
+        <section style="padding: unset;">
+            <center><h1><i class="fa-solid fa-gears"></i> Conheça nossas
+                    oficinas</h1></center>
+            <article id="oficinas" class="container">
+                <section class="row">
+                    <div class="col-sm">
+                        <h4>Fortaleza - CE</h4>
+                        <picture><img src="/assets/img/ofc1.jpg" alt></picture>
+                        <p><i class="fa-solid fa-location-dot"></i> Rua Afranio
+                            Barroso, 320, Centro</p>
+                        <p><i class="fa-solid fa-clock"></i> 08:00h as 18:00h</p>
+                        <p><i class="fa-solid fa-phone"></i> (88 9 8170-0168)</p>
+                    </div>
+                    <div class="col-sm">
+                        <h4>São Paulo - SP</h4>
+                        <picture><img src="/assets/img/ofc2.jpg" alt></picture>
+                        <p><i class="fa-solid fa-location-dot"></i> Rua José de
+                            alencar, 14, Centro</p>
+                        <p><i class="fa-solid fa-clock"></i> 08:00h as 18:00h</p>
+                        <p><i class="fa-solid fa-phone"></i> (88 9 8170-0168)</p>
+                    </div>
+                    <div class="col-sm">
+                        <h4>Sobral - CE</h4>
+                        <picture><img src="/assets/img/ofc3.jpg" alt></picture>
+                        <p><i class="fa-solid fa-location-dot"></i> Rua Afranio
+                            Barroso, Messejana, Centro</p>
+                        <p><i class="fa-solid fa-clock"></i> 08:00h as 18:00h</p>
+                        <p><i class="fa-solid fa-phone"></i> (88 9 8170-0168)</p>
+                    </div>
+                </section>
+            </article>
+        </section>
+        <br>
+        <section class="container">
+           <div class="row">
+                <aside class="col-md-8">
+                    <div class="sugest">
+                        <picture><img
+                                src="/assets/img/profile/829452_user_512x512.png"
+                                alt></picture>
+                        <div>
+                            <h4>Maria Eduarda</h4>
+                            <p>
+                                <b>Avaliação:</b> Loja top! Atendimento muito bom.
+                                Os funcionários são
+                                muito educados, o valor é muito em conta. Já
+                                indiquei para meu namorado,
+                                e farei isso para outros amigos meus. Parabens pelo
+                                trabalho.
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                &nbsp;&nbsp;&nbsp; <b>12/12/2022</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sugest">
+                        <picture><img src="/assets/img/profile/joao.png" alt></picture>
+                        <div>
+                            <h4>João Silva</h4>
+                            <p>
+                                <b>Avaliação:</b> Gostei muito da loja de motos! O
+                                atendimento é excelente, os funcionários são muito
+                                atenciosos e prestativos. Os preços são justos e a
+                                qualidade dos produtos é ótima. Recomendo!
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #d1d1d1;"></i>
+                                &nbsp;&nbsp;&nbsp; <b>25/04/2023</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sugest">
+                        <picture><img src="/assets/img/profile/paula.png" alt></picture>
+                        <div>
+                            <h4>Ana Paula</h4>
+                            <p>
+                                <b>Avaliação:</b> A loja de motos é ótima! Fui muito
+                                bem atendida e encontrei tudo o que precisava. Os
+                                preços são justos e a qualidade dos produtos é
+                                excelente. Com certeza voltarei a comprar na loja e
+                                recomendarei para meus amigos.
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ebd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #d1d1d1;"></i>
+                                <i class="fa-solid fa-star" style="color: #d1d1d1;"></i>
+                                &nbsp;&nbsp;&nbsp; <b>22/04/2023</b>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a href style="color: black;">Ver mais>></a>
+                </aside>
+                <aside class="col-sm">
+                    <form class="form-control" action="#" method="post">
+                        <h4>Dê sua opinião</h4>
+                        <input class="w-100" placeholder="Nome" type="text" id="nome" name="nome"
+                            required>
+                        <input class="w-100" placeholder="Email" type="email" id="email"
+                            name="email" required>
+                        <input class="w-100" placeholder="Telefone" type="tel" id="telefone"
+                            name="telefone" required>
+                        <textarea placeholder="Mensagem"
+                            id="sugestao" name="sugestao" required></textarea>
+                        <input class="w-100 btn btn-dark" class="button-sub" type="submit" value="Enviar">
+                    </form>
+
+                </aside>
+           </div>
+        </section>
+        <center><h3>Ultimas noticias</h3></center>
+        <section id="news" class="container">
+            <div class="row">
+                <article class="col-sm">
+                    <div><picture><img src="/assets/img/news/n1.webp" alt></picture></div>
+                    <div>
+                        <h4>Motos mais procuradas em 2023</h4>
+                        <p>
+                            Um novo levantamento realizado pela Mobiauto aponta os
+                            50 modelos e versões de motos mais procuradas no
+                            primeiro trimestre deste ano. A startup atua com uma
+                            plataforma para a compra e venda de veículos usados – e
+                            o relatório observou dados de acesso compreendendo
+                            modelos de 2005 a 2023.
+                        </p>
+                        <div class="icons">
+                            <span><i class="fa-solid fa-heart" style="color:
+                                    #c10606;"></i> 231</span>
+                            <span><i class="fa-solid fa-eye" style="color:
+                                    #004dd1;"></i> 1543</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm">
+                    <div><picture><img src="/assets/img/news/n2.webp" alt></picture></div>
+                    <div>
+                        <h4>As melhores estradas para pilotar sua moto</h4>
+                        <p>
+                            Quer saber onde encontrar as melhores estradas para
+                            pilotar sua moto? Confira nossa lista com as mais belas
+                            e desafiadoras rodovias do país. São paisagens incríveis
+                            e muita adrenalina garantida para os amantes das duas
+                            rodas.
+                        </p>
+                        <div class="icons">
+                            <span><i class="fa-solid fa-heart"
+                                    style="color: #c10606;"></i> 127</span>
+                            <span><i class="fa-solid fa-eye" style="color: #004dd1;"></i>
+                                956</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm">
+                    <div><picture><img src="/assets/img/news/n3.jpg" alt></picture></div>
+                    <div>
+                        <h4>Como escolher a moto ideal para seu estilo de pilotagem</h4>
+                        <p>
+                            Escolher a moto ideal para seu estilo de pilotagem pode
+                            ser uma tarefa difícil. Mas com algumas dicas simples é
+                            possível fazer a escolha certa e encontrar o modelo que
+                            mais se adequa às suas necessidades e preferências.
+                            Confira nosso guia completo e escolha sua próxima moto
+                            com segurança.
+                        </p>
+                        <div class="icons">
+                            <span><i class="fa-solid fa-heart"
+                                    style="color: #c10606;"></i> 312</span>
+                            <span><i class="fa-solid fa-eye" style="color: #004dd1;"></i>
+                                1892</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="sponsored" class="container">
+            <div class="row">
+                <aside class="col-sm">
+                    <picture><img src="assets/img/banner vert1.png" alt></picture>
+                </aside>
+                <article class="col-sm">
+                    <div>
+                        <picture><img src="assets/img/sponsored/garantia.jpeg"></picture>
+                    </div>
+                    <div>
+                        <picture><img src="assets/img/sponsored/corporativas.webp"></picture>
+                    </div>
+                    <div>
+                        <picture><img src="assets/img/sponsored/recall.jpeg"></picture>
+                    </div>
+                </article>
+                <aside class="col-sm">
+                    <picture><img src="assets/img/banner vert2.png" alt></picture>
+                </aside>
+
+            </div>
+        </section>
+    </body>
+    <footer class="d-flex justify-content-around align-itens-center justify-content-center">
+        <article>
+            <h3>Trabalho 1 da Disciplina ECO0056 - TECNOLOGIAS WEB</h3>
+            <t>Universidade Federal do Ceará - Sobral</t>
+        </article>
+        <article id="collaborators" class="d-flex justify-content-around ">
+            <div class="personal col-12">
+                <picture><img src="assets/img/perfil/andre.JPG"></picture>
+                <div>
+                    <span>André Veras</span>
+                    <br>
+                    <span>Matrícula: 385099</span>
+                </div>
+            </div>
+            <div class="personal col-6">
+                <picture><img src="assets/img/perfil/samuel.jpeg"></picture>
+                <div>
+                    <span>Samuel P. Milanez</span>
+                    <br>
+                    <span>Matrícula: 397804</span>
+                </div>
+            </div>
+        </article>
+    </footer>
+</html>
