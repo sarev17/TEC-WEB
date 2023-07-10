@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela Retro - Você Perdeu</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    .blink {
+      animation: blink 1s linear infinite;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 20pt;
+        margin: 2rem;
+    }
+
+    @keyframes blink {
+      0%, 50% {
+        opacity: 1;
+      }
+      51%, 100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="blink">Você perdeu!</h1>
+  <img src="assets/img/49004f34e073e4561eab418ebd8528da.gif" alt="">
+  <a href="index.html">Tente novamente!</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.fuels{
+    position: relative;
+}
+.fuels img{
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 0.2rem;
+    animation: moveDown 6s forwards;
+}
+@keyframes moveDown {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(400%);
+        left: -300;
+        visibility: hidden;
+    }
+  }

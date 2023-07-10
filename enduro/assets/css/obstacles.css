@@ -1,0 +1,95 @@
+.obstacles{
+    position: relative;
+}
+.obstacles img{
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 0.4rem;
+    animation: moveDown 6s forwards;
+}
+@keyframes moveDown {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: 0;
+        visibility: hidden;
+    }
+  }
+@keyframes moveDownLeft {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: -2000px;
+        visibility: hidden;
+    }
+  }
+@keyframes moveDownRight {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: 2000px;
+        visibility: hidden;
+    }
+  }
+@keyframes moveDownRight800 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: 800px;
+        visibility: hidden;
+    }
+  }
+@keyframes moveDownRight600 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: 600px;
+        visibility: hidden;
+    }
+  }
+@keyframes moveDownLeft800 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: -800px;
+        visibility: hidden;
+    }
+  }
+@keyframes moveDownLeft600 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(100);
+        top: calc(700%);
+        left: -600px;
+        visibility: hidden;
+    }
+  }
