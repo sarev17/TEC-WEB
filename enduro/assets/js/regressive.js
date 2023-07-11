@@ -1,18 +1,32 @@
-document.write('<script src="cars.js"></script>');
 document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#car-enemies').style.display = 'none';
+    document.querySelector('#car-enemies').style.display ='none'
+    document.querySelector('.obstacles').style.display = 'none';
+    document.querySelector('.obstacles').style.display = 'none'
+    document.querySelector('#infos').style.display = 'none';
+
+    document.querySelector('.start h2').addEventListener('click',()=>{esperarTresSegundos()})
+
   function esperarTresSegundos() {
-    
+    document.querySelector('#semaforo').style.display = 'block';
+    document.querySelector('.start').style.display = 'none';
     setTimeout(function() {
-      
+      document.querySelector('#semaforo').style.display = 'none';
       execute()
       
-    }, 3000); // 3000 milissegundos = 3 segundos
+    }, 4000); // 3000 milissegundos = 3 segundos
   }
   
   // Chamar a função de espera de 3 segundos
-  esperarTresSegundos();
 
   function execute(){
+
+    document.querySelector('#car-enemies').style.display = 'block';
+    document.querySelector('#car-enemies').style.display ='block'
+    document.querySelector('.obstacles').style.display = 'block';
+    document.querySelector('.obstacles').style.display = 'block'
+    document.querySelector('#infos').style.display = 'block';
+
     const car = document.getElementById("car");
     const carImage = document.querySelector('#car img')
     const roadSide = document.querySelector('#road-side')
@@ -80,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function escolherObstaculo() {
         const cone = '<img src="assets/img/obstacles/cone.png" alt="">';
         const barreira = '<img src="assets/img/obstacles/barreira.png" alt="">';
-        const carBlue = '<img src="assets/img/cars/blue/front.png" alt="">'
         const atraso = '<img src="assets/img/obstacles/atraso.png" alt="">'
         const fuelBomb = '<img id="bombFuel" src="assets/img/fuel.png" alt="">'
       
@@ -104,13 +117,13 @@ document.addEventListener("DOMContentLoaded", function() {
             obstacle.innerHTML = atraso
             return atraso;
         }
-        else if(numeroAleatorio<=0.8){
-            obstacle.innerHTML = fuelBomb
-            return fuelBomb;
+        else if(numeroAleatorio<=0.9){
+            obstacle.innerHTML = barreira
+            return barreira;
         }
         else{
-            obstacle.innerHTML = barreira
-          return barreira;
+            obstacle.innerHTML = fuelBomb
+          return fuelBomb;
         }
       }
 
@@ -174,11 +187,12 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           if(life <= 0){
             car.innerHTML = '<img src="assets/img/explosion.gif" alt="">'
+            updateCar()
           }
     }
 
     function reduceFuel(){
-        fuel -=10;
+        fuel -=20;
         document.querySelector('#slife').innerHTML = fuel+'%';
     }
     setInterval(reduceFuel,10000);

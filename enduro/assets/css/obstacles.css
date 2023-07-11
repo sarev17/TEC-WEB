@@ -27,7 +27,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: 0;
         visibility: hidden;
     }
@@ -39,7 +39,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: -2000px;
         visibility: hidden;
     }
@@ -51,7 +51,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: 2000px;
         visibility: hidden;
     }
@@ -63,7 +63,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: 800px;
         visibility: hidden;
     }
@@ -75,7 +75,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: 600px;
         visibility: hidden;
     }
@@ -87,7 +87,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: -800px;
         visibility: hidden;
     }
@@ -99,7 +99,7 @@
     }
     100% {
         transform: scale(100);
-        top: calc(700%);
+        top: calc(500%);
         left: -600px;
         visibility: hidden;
     }

@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Enduro</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/obstacles.css">
-    <link rel="stylesheet" href="assets/css/cars.css">
-    <script src="assets/js/regressive.js"></script>
-    <script src="assets/js/cars.js"></script>
-    <script src="assets/js/temes.js"></script>
-</head>
-<body> 
-   <div id="game">
-    <section id="sky"></section>
-    <section id="background">
-        <div id="road-side"></div>
-        <div id="road"></div>
-        <div id="car"><img src="assets/img/cars/red/back.png" alt=""></div>
-        <div id="car-enemies"><img src="" alt=""></div>
-        <div class="obstacles"><img src="" alt=""></div>
-        <div id="finish"><img src="" alt=""></div>
-    </section>
-    <section id="infos">
-        <div id="life">
-            <span><img style="width: 4rem;" src="assets/img/cars/red/side.png" alt=""></span>
-            <picture>
-                <img src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp" alt="">
-                <img src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp" alt="">
-                <img src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp" alt="">
-                <img src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp" alt="">
-                <img src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp" alt="">
-            </picture>
+    <head>
+        <title>Enduro</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/obstacles.css">
+        <link rel="stylesheet" href="assets/css/cars.css">
+        <script src="assets/js/regressive.js"></script>
+        <script src="assets/js/cars.js"></script>
+        <script src="assets/js/temes.js"></script>
+    </head>
+    <body>
+        <div id="game">
+            <section id="sky"></section>
+            <section id="background">
+                <div id="road-side"></div>
+                <div id="road"></div>
+                <div id="car"><img src="assets/img/cars/red/back.png" alt></div>
+                <div id="car-enemies"><img src alt></div>
+                <div class="obstacles"><img src alt></div>
+                <div id="finish"><img src alt></div>
+            </section>
+            <section id="infos">
+                <div id="life">
+                    <span><img style="width: 4rem;"
+                            src="assets/img/cars/red/side.png" alt></span>
+                    <picture>
+                        <img
+                            src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp"
+                            alt>
+                        <img
+                            src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp"
+                            alt>
+                        <img
+                            src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp"
+                            alt>
+                        <img
+                            src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp"
+                            alt>
+                        <img
+                            src="assets/img/red-heart-symbol-on-transparent-background-free-png.webp"
+                            alt>
+                    </picture>
+                </div>
+                <div id="fuel">
+                    <span><img src="assets/img/fuel.png" alt></span>
+                    <span id="slife">100%</span>
+                </div>
+                <div style="color: white;" id="points">
+                    <img style="width: 3rem;" src="assets/img/podio.png" alt>
+                    <span>10º Lugar</span>
+                </div>
+            </section>
         </div>
-        <div id="fuel">
-            <span><img src="assets/img/fuel.png" alt=""></span>
-            <span id="slife">100%</span>
-        </div>
-        <div style="color: white;" id="points">
-            <img style="width: 3rem;" src="assets/img/podio.png" alt="">
-            <span>10º Lugar</span>
-        </div>
-    </section>
-   </div>
 
-   <div class="end">
-        <h2>FIM DE JOGO</h2>
-        <p>Sua posição: <span>0</span></p>
-        <a href="index.html">Jogar novamente</a>
-   </div>
-   <div class="win">
-        <h2>Parabens. Você venceu a corrida.</h2>
-        <p>Sua posição: <span>1º colocado</span></p>
-        <a href="index.html">Jogar novamente</a>
-   </div>
-   <div class="temas">
-        <img id="diurno" src="/assets/img/temes/diurno.png" alt="">
-        <img id="noturno" src="/assets/img/temes/noturno.png" alt="">
-        <img id="neve" src="/assets/img/temes/neve.png" alt="">
-   </div>
+        <div class="end">
+            <h2>FIM DE JOGO</h2>
+            <p>Sua posição: <span>0</span></p>
+            <a href="index.html">Jogar novamente</a>
+        </div>
+        <div class="win">
+            <h2>Parabens. Você venceu a corrida.</h2>
+            <p>Sua posição: <span>1º colocado</span></p>
+            <a href="index.html">Jogar novamente</a>
+        </div>
+        <div class="temas">
+            <img id="diurno" src="/assets/img/temes/diurno.png" alt>
+            <img id="noturno" src="/assets/img/temes/noturno.png" alt>
+            <img id="neve" src="/assets/img/temes/neve.png" alt>
+        </div>
+        <div class="start">
+            <h2>Iniciar</h2>
+        </div>
+        <img id="semaforo" src="assets/img/SEMAFORO.gif" alt="">
+        <audio autoplay preload="auto" controls>
+            <source src="assets/forro_estourado-026-forro-estourado-dez_jan-2013-top-gear.mp3"  type="audio/mpeg">
+            Seu navegador não suporta áudio tag.
+        </audio>
 
-</body>
+    </body>
 </html>
