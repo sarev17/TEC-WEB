@@ -9,6 +9,17 @@
     width: 0.4rem;
     animation: moveDown 6s forwards;
 }
+#finish{
+  position: relative;
+}
+#finish img{
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 1.4rem;
+    animation: finish 40s forwards;
+}
 @keyframes moveDown {
     0% {
       top: 0;
@@ -90,6 +101,18 @@
         transform: scale(100);
         top: calc(700%);
         left: -600px;
+        visibility: hidden;
+    }
+  }
+  @keyframes finish {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+        transform: scale(500);
+        top: calc(1000%);
+        left: 0;
         visibility: hidden;
     }
   }

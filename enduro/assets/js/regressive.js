@@ -1,3 +1,4 @@
+document.write('<script src="cars.js"></script>');
 document.addEventListener("DOMContentLoaded", function() {
   function esperarTresSegundos() {
     
@@ -146,11 +147,16 @@ document.addEventListener("DOMContentLoaded", function() {
     function testColision(){
         const retangulo1 = car.getBoundingClientRect();
         const retangulo2 = document.querySelector('.obstacles img').getBoundingClientRect();
+        const retFinish = document.querySelector('#finish img').getBoundingClientRect();
+        // if(retFinish.top>300){
+        //   alert('venceu');
+        // }
         if (
             retangulo1.left < retangulo2.right &&
             retangulo1.right > retangulo2.left &&
             retangulo1.top < retangulo2.bottom &&
-            retangulo1.bottom > retangulo2.top
+            retangulo1.bottom > retangulo2.top ||
+            retFinish.top == retangulo1 .top
           ) {
             if(document.querySelector('.obstacles img').id=='bombFuel'){
                 fuel+=10;
@@ -166,8 +172,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
           }
-          if(life == 0 || fuel == 0){
-            // window.location.href = 'lose.html';
+          if(life <= 0){
+            car.innerHTML = '<img src="assets/img/explosion.gif" alt="">'
           }
     }
 
@@ -178,9 +184,23 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(reduceFuel,10000);
 
     function updateCar(){
+      if(life == 0 || fuel == 0){
+            // window.location.href = 'lose.html';
+            document.querySelector('.end').style.display = 'block';
+            document.querySelector('#car-enemies').style.display = 'none';
+            document.querySelector('#car-enemies').remove()
+            document.querySelector('.obstacles').style.display = 'none';
+            document.querySelector('.obstacles').remove()
+            document.querySelector('#infos').style.display = 'none';
+            document.querySelector('.end span').innerHTML = document.querySelector('#points span').innerHTML
+
+            clearInterval(setCreateCar);
+          }
       car.innerHTML = '<img src="assets/img/cars/red/back.png" alt="">'
     }
     setInterval(updateCar,2000);
+
+
 }
 
   });

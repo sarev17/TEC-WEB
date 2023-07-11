@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/cars.css">
     <script src="assets/js/regressive.js"></script>
     <script src="assets/js/cars.js"></script>
+    <script src="assets/js/temes.js"></script>
 </head>
 <body> 
    <div id="game">
@@ -17,6 +18,7 @@
         <div id="car"><img src="assets/img/cars/red/back.png" alt=""></div>
         <div id="car-enemies"><img src="" alt=""></div>
         <div class="obstacles"><img src="" alt=""></div>
+        <div id="finish"><img src="" alt=""></div>
     </section>
     <section id="infos">
         <div id="life">
@@ -33,11 +35,28 @@
             <span><img src="assets/img/fuel.png" alt=""></span>
             <span id="slife">100%</span>
         </div>
-        <div id="points">
+        <div style="color: white;" id="points">
             <img style="width: 3rem;" src="assets/img/podio.png" alt="">
-            <span>10</span>
+            <span>10º Lugar</span>
         </div>
     </section>
    </div>
+
+   <div class="end">
+        <h2>FIM DE JOGO</h2>
+        <p>Sua posição: <span>0</span></p>
+        <a href="index.html">Jogar novamente</a>
+   </div>
+   <div class="win">
+        <h2>Parabens. Você venceu a corrida.</h2>
+        <p>Sua posição: <span>1º colocado</span></p>
+        <a href="index.html">Jogar novamente</a>
+   </div>
+   <div class="temas">
+        <img id="diurno" src="/assets/img/temes/diurno.png" alt="">
+        <img id="noturno" src="/assets/img/temes/noturno.png" alt="">
+        <img id="neve" src="/assets/img/temes/neve.png" alt="">
+   </div>
+
 </body>
 </html>

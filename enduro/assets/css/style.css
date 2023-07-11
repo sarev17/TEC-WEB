@@ -11,6 +11,11 @@ body{
 #sky{
     background-color: aqua;
     height: 16vh;
+    z-index: 0;
+    position: relative;
+    background-image: url('/assets/img/paisagens/montais-day.jpg');
+    background-size: contain; /* Ajuste o tamanho da imagem para preencher a seção */
+    background-position: center; /* Posicione a imagem no centro da seção */
 }
 #background{
     position: relative;
@@ -90,6 +95,32 @@ body{
   }
   #car-enemies{
     z-index: 1;
+  }
+  #points{
+    color: white;
+    font-size: 25pt;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1rem;
+  }
+  .end,.win{
+    position: absolute;
+    background-color: white;
+    padding: 4rem;
+    text-align: center;
+    font-size: 16pt;
+    top: 102px;
+    display: none;
+  }
+  .temas img{
+    width: 10rem;
+  }
+  .temas{
+    position: absolute;
+    right: 7px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
   }
   @keyframes roadMove {
     100% {
